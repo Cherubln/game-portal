@@ -1,39 +1,15 @@
-import React, { useEffect, useState } from "react";
-import apiClient from "../services/api-client";
-import { AxiosError } from "axios";
+import useGames from "../hooks/useGames";
 import ErrorMessage from "./ErrorMessage";
 
-interface Game {
-  id: number;
-  name: string;
-}
-interface FetchGamesResponse {
-  count: number;
-  results: Game[];
-}
-
 const GameGrid = () => {
-  const [games, setGames] = useState<Game[]>([]);
-  const [error, setError] = useState("");
+  const { error, games } = useGames();
 
-  const fetchGames = async () => {
-    try {
-      const { data } = await apiClient.get<FetchGamesResponse>("/xgames");
-      setGames(data.results);
-    } catch (error) {
-      setError((error as AxiosError).message);
-    }
-  };
-
-  useEffect(() => {
-    fetchGames();
-  }, []);
   return (
     <>
       <ErrorMessage>{error}</ErrorMessage>
       <ul>
         {games.map((game) => {
-          return <li>{game.name}</li>;
+          return <li key={game.id}>{game.name}</li>;
         })}
       </ul>
     </>
