@@ -1,36 +1,36 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import apiClient from "../services/api-client";
+import Genre from "../types/Genre";
 import { AxiosError, CanceledError } from "axios";
-import Game from "../types/Game";
 import FetchResponse from "../types/FetchResponse";
 
-const useGames = () => {
-  const [games, setGames] = useState<Game[]>([]);
+const useGenres = () => {
+  const [genres, setGenres] = useState<Genre[]>([]);
   const [error, setError] = useState("");
   const [isLoading, setLoading] = useState(false);
 
   useEffect(() => {
     const controller = new AbortController();
     setLoading(true);
-    const fetchGames = async () => {
+    async function fetchGenres() {
       try {
-        const { data } = await apiClient.get<FetchResponse<Game[]>>("/games", {
-          signal: controller.signal,
-        });
-        setGames(data.results);
+        const { data } = await apiClient.get<FetchResponse<Genre[]>>(
+          "/genres",
+          {
+            signal: controller.signal,
+          }
+        );
+        setGenres(data.results);
         setLoading(false);
       } catch (error) {
         if (error instanceof CanceledError) return;
         setError((error as AxiosError).message);
         setLoading(false);
       }
-    };
-    fetchGames();
-
+    }
+    fetchGenres();
     return () => controller.abort();
   }, []);
-
-  return { games, error, isLoading };
+  return { genres, error, isLoading };
 };
-
-export default useGames;
+export default useGenres;
