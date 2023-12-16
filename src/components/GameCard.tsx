@@ -9,7 +9,7 @@ interface GameCardProps {
 const GameCard = ({ game }: GameCardProps) => {
   return (
     <Card borderRadius={".5rem"} overflow={"hidden"}>
-      <Image src={game.background_image} />
+      <Image src={game.background_image} height={"15rem"} />
       <CardBody>
         <Heading fontSize="2xl">{game.name}</Heading>
         <HStack justifyContent={"space-between"}>
