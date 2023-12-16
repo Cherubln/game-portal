@@ -4,13 +4,18 @@ import ErrorMessage from "./ErrorMessage";
 import GameCard from "./GameCard";
 import GameCardSkeleton from "./GameCardSkeleton";
 import Genre from "../types/Genre";
+import Platform from "../types/Platform";
 
 interface Props {
   selectedGenre: Genre | null;
+  selectedPlatform: Platform | null;
 }
 
-const GameGrid = ({ selectedGenre }: Props) => {
-  const { error, data, isLoading } = useGames(selectedGenre);
+const GameGrid = ({ selectedGenre, selectedPlatform }: Props) => {
+  const { error, data, isLoading } = useGames({
+    genre: selectedGenre,
+    platform: selectedPlatform,
+  });
   const skeletons = new Array(12).fill(0);
   return (
     <Box marginTop={4}>

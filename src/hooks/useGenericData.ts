@@ -16,6 +16,7 @@ function useData<T>(
   useEffect(() => {
     const controller = new AbortController();
     setLoading(true);
+    setError("");
     async function fetchData() {
       try {
         const { data } = await apiClient.get<FetchResponse<T[]>>(endpoint, {

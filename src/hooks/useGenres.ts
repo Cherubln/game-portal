@@ -1,5 +1,5 @@
 import Genre from "../types/Genre";
-import useData from "./useData";
+import useData from "./useGenericData";
 
 const useGenres = () => useData<Genre>("/genres");
 
