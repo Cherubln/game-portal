@@ -8,6 +8,11 @@ function App() {
     <Grid
       templateAreas={{ base: `"nav" "main"`, lg: `"nav nav" "aside main"` }}
       padding={"1rem"}
+      templateColumns={{
+        base: "1fr",
+        lg: "25% 1fr",
+        xl: "20% 1fr",
+      }}
     >
       <GridItem area={"nav"}>
         <NavBar />
