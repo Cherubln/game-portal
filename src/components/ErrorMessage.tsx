@@ -1,5 +1,5 @@
 import { Text } from "@chakra-ui/react";
-import React, { PropsWithChildren } from "react";
+import { PropsWithChildren } from "react";
 
 const ErrorMessage = ({ children }: PropsWithChildren) => {
   if (!children) return;
