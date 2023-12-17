@@ -124,7 +124,7 @@ Don't forget to give the project a star!
 
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `LICENSE` for more information.
 
 <p align="right">(<a href="#readme-top">&#x1F51D;</a>)</p>
 
