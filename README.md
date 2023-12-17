@@ -90,7 +90,7 @@ This is the list of things you need to use the software and how to install them.
    ```
 4. Enter your API in `.env` at root directory
    ```sh
-   VITE_API_KEY ="ENTER YOUR API";
+   VITE_API_KEY ="ENTER YOUR API"
    ```
 
 <p align="right">(<a href="#readme-top">&#x1F51D;</a>)</p>
