@@ -21,7 +21,11 @@ function App() {
       }}
     >
       <GridItem area={"nav"} mb={5}>
-        <NavBar />
+        <NavBar
+          onSearch={(searchText) => {
+            setGameQuery({ ...gameQuery, searchText });
+          }}
+        />
       </GridItem>
       <Show above="lg">
         <GridItem area={"aside"}>

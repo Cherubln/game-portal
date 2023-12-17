@@ -1,13 +1,13 @@
 import { HStack, Image } from "@chakra-ui/react";
 import logo from "../assets/logo.png";
 import ToggleTheme from "./ToggleTheme";
-import SearchInput from "./SearchInput";
+import SearchInput, { SearchProps } from "./SearchInput";
 
-const NavBar = () => {
+const NavBar = ({ onSearch }: SearchProps) => {
   return (
     <HStack>
       <Image src={logo} boxSize="60px" />
-      <SearchInput />
+      <SearchInput onSearch={onSearch} />
       <ToggleTheme />
     </HStack>
   );

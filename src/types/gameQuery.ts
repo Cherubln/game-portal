@@ -5,4 +5,5 @@ export default interface GameQuery {
   genre: Genre | null;
   platform: Platform | null;
   sortOrder: string | undefined;
+  searchText: string | undefined;
 }
