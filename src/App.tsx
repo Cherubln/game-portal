@@ -17,8 +17,7 @@ function App() {
       padding={"1rem"}
       templateColumns={{
         base: "1fr",
-        lg: "25% 1fr",
-        xl: "20% 1fr",
+        lg: "23% 1fr",
       }}
     >
       <GridItem area={"nav"} mb={5}>

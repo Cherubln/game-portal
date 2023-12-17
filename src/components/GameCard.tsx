@@ -12,11 +12,11 @@ const GameCard = ({ game }: GameCardProps) => {
     <Card borderRadius={".5rem"} overflow={"hidden"}>
       <Image src={game.background_image || imagePlaceholder} height={"15rem"} />
       <CardBody>
-        <Heading fontSize="2xl">{game.name}</Heading>
         <HStack justifyContent={"space-between"}>
           <PlatformIconList platforms={game.parent_platforms} />
           <CriticScore score={game.metacritic} />
         </HStack>
+        <Heading fontSize="2xl">{game.name}</Heading>
       </CardBody>
     </Card>
   );
