@@ -20,7 +20,7 @@ function App() {
         xl: "20% 1fr",
       }}
     >
-      <GridItem area={"nav"}>
+      <GridItem area={"nav"} mb={5}>
         <NavBar />
       </GridItem>
       <Show above="lg">
