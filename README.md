@@ -1,7 +1,5 @@
 <a name="readme-top"></a>
 
-<!-- PROJECT LOGO -->
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -84,15 +82,15 @@ This is the list of things you need to use the software and how to install them.
 1. Get a free API Key at [https://api.rawg.io/docs/](https://api.rawg.io/docs/)
 2. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/Cherubln/game-hub.git
    ```
 3. Install NPM packages
    ```sh
    npm install
    ```
 4. Enter your API in `.env` at root directory
-   ```js
-   const VITE_API_KEY = "ENTER YOUR API";
+   ```sh
+   VITE_API_KEY ="ENTER YOUR API";
    ```
 
 <p align="right">(<a href="#readme-top">&#x1F51D;</a>)</p>
@@ -146,12 +144,11 @@ Project Link: [https://github.com/Cherubln/game-hub](https://github.com/Cherubln
 
 List of some resources I find helpful and would like to give credit to!
 
-- [GitHub Pages](https://choosealicense.com)
+- [GitHub Pages](https://pages.github.com)
 
 <p align="right">(<a href="#readme-top">&#x1F51D;</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/

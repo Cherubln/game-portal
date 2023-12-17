@@ -1,18 +1,17 @@
 import Game from "../types/Game";
-import Genre from "../types/Genre";
-import Platform from "../types/Platform";
+import GameQuery from "../types/gameQuery";
 import useData from "./useGenericData";
 
-type Props = {
-  genre: Genre | null;
-  platform: Platform | null;
-};
-
-const useGames = ({ genre, platform }: Props) =>
+const useGames = (gameQuery: GameQuery) =>
   useData<Game>(
     "/games",
-    { params: { genres: genre?.id, platforms: platform?.id } },
-    [genre?.id, platform?.id]
+    {
+      params: {
+        genres: gameQuery.genre?.id,
+        platforms: gameQuery.platform?.id,
+      },
+    },
+    [gameQuery]
   );
 
 export default useGames;

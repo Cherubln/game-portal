@@ -5,8 +5,9 @@ import Platform from "../types/Platform";
 
 interface Props {
   onSelectPlatform: (platform: Platform) => void;
+  selectedPlatform: Platform;
 }
-const PlatformSelector = ({ onSelectPlatform }: Props) => {
+const PlatformSelector = ({ onSelectPlatform, selectedPlatform }: Props) => {
   const { data, error } = usePlatform();
   console.log(data);
 
@@ -15,7 +16,7 @@ const PlatformSelector = ({ onSelectPlatform }: Props) => {
   return (
     <Menu>
       <MenuButton as={Button} rightIcon={<BsChevronDown />}>
-        Platforms
+        {selectedPlatform ? selectedPlatform.name : "Platforms"}
       </MenuButton>
       <MenuList>
         {data.map((platform) => (
