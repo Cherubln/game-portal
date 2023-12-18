@@ -1,3 +1,6 @@
+[![Deployment-status]][Deployment-url]
+
+
 <a name="readme-top"></a>
 
 <!-- TABLE OF CONTENTS -->
@@ -162,3 +165,5 @@ List of some resources I find helpful and would like to give credit to!
 [TypeScript-url]: https://chakra-ui.com/
 [Vite]: https://img.shields.io/badge/vite-20232A?style=for-the-badge&logo=vite&logoColor=646CFF
 [Vite-url]: https://vitejs.dev/
+[Deployment-status]: https://img.shields.io/github/deployments/Cherubln/game-hub/github-pages?logo=github&label=gh-pages
+[Deployment-url]: https://cherubln.github.io/game-hub/
