@@ -35,16 +35,16 @@
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-This Game Hub web app is a useful tool for gamers who want to find and explore different games. It allows users to filter games by supported device (such as PC, console, mobile, etc.) or by genres (such as action, adventure, puzzle, etc.). Users can also search for a specific game by typing its name or keywords in the search bar. The app supports color mode switch, which means users can choose between light and dark themes according to their preference.
+This Game Portal is a useful tool for gamers who want to find and explore different games. It allows users to filter games by supported device (such as PC, console, mobile, etc.) or by genres (such as action, adventure, puzzle, etc.). Users can also search for a specific game by typing its name or keywords in the search bar. The app supports color mode switch, which means users can choose between light and dark themes according to their preference.
 
-The Game Hub is beneficial for several reasons:
+The Game Portal is beneficial for several reasons:
 
 - First, it helps users discover new games that match their interests and devices.
 - Second, it provides information and reviews about each game, so users can learn more about the gameplay, graphics, story, etc.
 - Third, it saves users time and effort by filtering out irrelevant or incompatible games.
 - Fourth, it enhances the user experience by offering a customizable and user-friendly interface.
 
-Game Hub solves the problem of finding suitable and enjoyable games in a vast and diverse market. It also helps users stay updated with the latest trends and releases in the gaming industry. The web app could be of help for anyone who loves playing games or wants to try something new.
+Game Portal solves the problem of finding suitable and enjoyable games in a vast and diverse market. It also helps users stay updated with the latest trends and releases in the gaming industry. The web app could be of help for anyone who loves playing games or wants to try something new.
 
 <p align="right">(<a href="#readme-top">&#x1F51D;</a>)</p>
 
