@@ -18,7 +18,7 @@ const NavBar = ({ onSearch }: SearchProps) => {
           padding={3}
           whiteSpace={"nowrap"}
         >
-          Game Hub
+          Game Portal
         </Text>
         <Image
           src={cirlceWrapper}
