@@ -71,9 +71,7 @@ This is the list of things you need to use the software and how to install them.
 
 - Node.js
 
-  ```
-  Download nodejs from their official web page
-  ```
+  `Download nodejs from their official web page`
 
 - npm [_usually nodejs comes with npm_]
   ```sh
@@ -85,7 +83,7 @@ This is the list of things you need to use the software and how to install them.
 1. Get a free API Key at [https://api.rawg.io/docs/](https://api.rawg.io/docs/)
 2. Clone the repo
    ```sh
-   git clone https://github.com/Cherubln/game-hub.git
+   git clone https://github.com/Cherubln/game-portal.git
    ```
 3. Install NPM packages
    ```sh
@@ -137,7 +135,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Cherubin Ndikubwayo - [@Cherubln](https://twitter.com/Cherubln) - cherubinkubwayo@gmail.com
 
-Project Link: [https://github.com/Cherubln/game-hub](https://github.com/Cherubln/game-hub)
+Project Link: [https://github.com/Cherubln/game-portal](https://github.com/Cherubln/game-portal)
 
 <p align="right" >(<a href="#readme-top">&#x1F51D;</a>)</p>
 
@@ -165,5 +163,5 @@ List of some resources I find helpful and would like to give credit to!
 [TypeScript-url]: https://chakra-ui.com/
 [Vite]: https://img.shields.io/badge/vite-20232A?style=for-the-badge&logo=vite&logoColor=646CFF
 [Vite-url]: https://vitejs.dev/
-[Deployment-status]: https://img.shields.io/github/deployments/Cherubln/game-hub/github-pages?logo=github&label=gh-pages
-[Deployment-url]: https://cherubln.github.io/game-hub/
+[Deployment-status]: https://img.shields.io/github/deployments/Cherubln/game-portal/github-pages?logo=github&label=gh-pages
+[Deployment-url]: https://cherubln.github.io/game-portal/
